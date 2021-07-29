@@ -28,8 +28,14 @@
   color: white;
   user-select: none;
   box-shadow: 7px 5px 2px 0 rgb(143, 28, 28);
+  max-width: 80%;
 }
-
+@media (max-width: 480px){
+  #buttons button{
+    font-size: 25px;
+    padding: 30px 0;
+  }
+}
 .popup {
   width: 50vw;
   height: 50vh;
@@ -90,4 +96,15 @@
   margin: 0;
   background-color: #03a9f4;
   color: #fff;
+}
+@media (max-width: 767px){
+  .popup #result{
+    font-size: 25px;
+}
+}
+
+@media (max-width: 480px){
+  .popup #result{
+    font-size: 17px;
+  }
 }
