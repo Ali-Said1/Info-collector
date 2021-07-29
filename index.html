@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Collecting info</title>
+</head>
+<body>
+  <div id="buttons" style="opacity: 100%;">
+  <button contenteditable="false" onclick="Your_Name()">Name</button>
+  <button contenteditable="false" onclick="Your_Age()">Your Age</button>
+  <button contenteditable="false" onclick="Your_Hobbie()">Hobbie</button>
+  <button contenteditable="false" onclick="Your_Grade()">Grade</button>
+  <button contenteditable="false" onclick="openpopup()" id="popupButton">Result</button>
+</div>
+<div contenteditable="false" class="popup" id="popup">
+  <div contenteditable="false" class="head" onclick="closepopup()" id="close">&times;</div>
+  <p contenteditable="false" id="result"></p>
+</div>
+  <div contenteditable="false" id="overlay" class="overlay"></div>
+<script src="script.js"></script>
+</body>
+</html>
