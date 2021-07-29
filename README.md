@@ -1,2 +1,2 @@
 # Info-collector
-Collects info then presents it in anice popup
+Collects info then presents it in a nice popup
