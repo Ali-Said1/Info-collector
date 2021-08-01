@@ -21,7 +21,7 @@ function openpopup() {
   popup.classList.add("active");
   overlay.classList.add("active");
 
-  if(ResponseName == "" || ResponseName == null){
+  if(Math.trunc(ResponseName) == "" || ResponseName == null){
     document.getElementById("resultname").style.display = "none"
   } else{
     document.getElementById("resultname").style.display = "block"
@@ -29,7 +29,7 @@ function openpopup() {
   "Name: " +
   ResponseName +
   "<br/>"}
-  if(ResponseAge == "" || ResponseAge == null){
+  if(Math.trunc(ResponseAge) == "" || ResponseAge == null){
     document.getElementById("resultage").style.display = "none"
   }else{
     document.getElementById("resultage").style.display = "block"
@@ -37,7 +37,7 @@ function openpopup() {
   "Age: " +
   ResponseAge +
   "<br/>"}
-  if(ResponseHobbie == "" || ResponseHobbie == null){
+  if(Math.trunc(ResponseHobbie) == "" || ResponseHobbie == null){
     document.getElementById("resulthobbie").style.display= "none"
   }else{
     document.getElementById("resulthobbie").style.display= "block"
@@ -45,7 +45,7 @@ function openpopup() {
   "Hobbie: " +
   ResponseHobbie +
   "<br/>"}
-  if(ResponseGrade == "" || ResponseGrade == null){
+  if(Math.trunc(ResponseGrade) == "" || ResponseGrade == null){
     document.getElementById("resultgrade").style.display = "none"
   }else{
     document.getElementById("resultgrade").style.display = "block"
@@ -53,7 +53,7 @@ function openpopup() {
   "Grade: " +
   ResponseGrade +
   "<br/>"}
-  if((ResponseName == null || ResponseName == "") && (ResponseAge == null || ResponseAge == "") && (ResponseHobbie == null || ResponseHobbie == "") && (ResponseGrade == null || ResponseGrade == "")){
+  if((ResponseName == null || Math.trunc(ResponseName) == "") && (ResponseAge == null || Math.trunc(ResponseAge) == "") && (ResponseHobbie == null || Math.trunc(ResponseHobbie) == "") && (ResponseGrade == null || Math.trunc(ResponseGrade) == "")){
     document.getElementById('popup').appendChild(addedp);
     addedp.innerText= "No data entered"
   }
